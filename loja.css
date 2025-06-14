@@ -1,0 +1,149 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(/loja/images\ \(1\).jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+  color: rgb(255, 255, 255);
+  height: 100vh;
+}
+
+ header {
+background-color: gray;
+padding: 19px 0;
+}
+
+.container {
+     width: 90%;
+     max-width: 1200px;
+     margin: 0 auto;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+    
+}
+.logo{
+    color: yellow;
+  font-size: 27px;
+  font-weight: bold;
+   text-transform: uppercase;
+   
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  gap: 20px;
+}
+
+
+nav ul li a {
+  color: #ecf0f1;
+   text-decoration: none;
+   font-size: 23px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ transition: color 0.3s;
+ 
+}
+nav ul li a:hover {
+  color: #f1c40f;
+}
+.titulo{
+   
+  padding: 1px;
+  margin-left: 20px;
+  margin-right: 50%;
+  margin-top: 3%;
+  background-color: rgba(44, 62, 80, 0.7);
+}
+.titulo h2,
+.titulo p,
+.titulo li {
+  margin: 0;
+}
+
+.titulo h2 {
+  display: flex;
+  font-family: Arial;
+  color: #0a0902d8; /* amarelo ouro */
+  font-size: 50px;
+  margin-left: 25%;
+  
+}
+.titulo p{
+padding: 5%;
+margin-left: 5%;
+color: black;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 25px;
+display: ;
+
+}
+.titulo li{
+  color: black;
+  margin-left: 10%;
+  font-size: 20px;
+}
+
+  
+
+.foto3 {
+  margin-left: 130%; /* Ajuste esse valor como quiser */
+   position: relative;
+  top: -560px;
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+}
+.foto2{
+  margin-left: 148%; /* Ajuste esse valor como quiser */
+   position: relative;
+  top: -450px;
+   width: 120px;
+  height: auto;
+  object-fit: cover;
+}
+.foto1 {
+margin-left: 166%; /* Ajuste esse valor como quiser */
+   position: relative;
+  top: -340px;
+   width: 120px;
+  height: auto;
+  object-fit: cover;
+
+}
+.foto4 {
+margin-left: 135%; /* Ajuste esse valor como quiser */
+   position: relative;
+  top: -550px;
+   width: 290px;
+  height: auto;
+  object-fit: cover;
+
+}
+/* TELAS PEQUENAS - Celulares (até 767px) */
+@media screen and (max-width: 767px) 
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+/* TELAS GRANDES - PCs com largura >= 1824px */
+@media screen and (min-width: 1824px) 
+  .container {
+    max-width: 1600px;
+    padding: 0 40px;
+  }
+/* TABLETS (até 1023px) */
+@media screen and (max-width: 1023px) 
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
